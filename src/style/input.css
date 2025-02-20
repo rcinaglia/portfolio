@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+body
+{
+    font-family: DM_Sans;
+}
+
+@font-face {
+    font-family: DM_Sans;
+    src: url(../assets/fonts/dm_sans/DMSans-Light.ttf);
+}
+
