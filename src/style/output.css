@@ -1652,6 +1652,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
+  }
   .border-x {
     border-inline-style: var(--tw-border-style);
     border-inline-width: 1px;
@@ -2664,6 +2668,12 @@
       width: calc(1/4 * 100%);
     }
   }
+  .sm\:border-t {
+    @media (width >= 40rem) {
+      border-top-style: var(--tw-border-style);
+      border-top-width: 1px;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -2687,6 +2697,27 @@
   .md\:w-20 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:rounded-tl-lg {
+    @media (width >= 48rem) {
+      border-top-left-radius: var(--radius-lg);
+    }
+  }
+  .md\:rounded-tr-lg {
+    @media (width >= 48rem) {
+      border-top-right-radius: var(--radius-lg);
+    }
+  }
+  .md\:rounded-bl-lg {
+    @media (width >= 48rem) {
+      border-bottom-left-radius: var(--radius-lg);
+    }
+  }
+  .md\:border-l {
+    @media (width >= 48rem) {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 1px;
     }
   }
   .md\:text-3xl {
@@ -2764,10 +2795,20 @@
       border-top-right-radius: 0;
     }
   }
+  .lg\:rounded-tl-lg {
+    @media (width >= 64rem) {
+      border-top-left-radius: var(--radius-lg);
+    }
+  }
   .lg\:rounded-r {
     @media (width >= 64rem) {
       border-top-right-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem;
+    }
+  }
+  .lg\:rounded-tr-lg {
+    @media (width >= 64rem) {
+      border-top-right-radius: var(--radius-lg);
     }
   }
   .lg\:rounded-b-none {
@@ -2776,10 +2817,26 @@
       border-bottom-left-radius: 0;
     }
   }
+  .lg\:rounded-br-lg {
+    @media (width >= 64rem) {
+      border-bottom-right-radius: var(--radius-lg);
+    }
+  }
+  .lg\:rounded-bl-lg {
+    @media (width >= 64rem) {
+      border-bottom-left-radius: var(--radius-lg);
+    }
+  }
   .lg\:border-t {
     @media (width >= 64rem) {
       border-top-style: var(--tw-border-style);
       border-top-width: 1px;
+    }
+  }
+  .lg\:border-l {
+    @media (width >= 64rem) {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 1px;
     }
   }
   .lg\:border-l-0 {
